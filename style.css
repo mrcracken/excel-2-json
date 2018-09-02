@@ -1,0 +1,32 @@
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+	background-color: white;
+	font-size: 15px;
+    padding: 7px 14px;
+	border-radius: 5px;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Elegir";
+}
+
+h1{
+	text-align: center;
+	margin-top: 5px; 
+	margin-bottom: 20px; 
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+	margin: left 5px;
+}
