@@ -81,6 +81,12 @@ function filePicked(oEvent) {
 
 */
 
+/**
+* Funny stuff. If i write getFunction() it will load on page loading.
+* Without brackets (like getFunction) it will load after click
+*/
+document.getElementById("viewBtn").addEventListener("click", getExcel);
+
 // function for view Excel fiel
 	function getExcel(){
 	      //making AJAX request
@@ -98,7 +104,7 @@ function filePicked(oEvent) {
 	          //cheking responce
 	          console.log(data);
 	          //output in index.html where div id=excelData
-	          document.getElementById('excelData').innerHTML = output;
+	          //document.getElementById('excelData').innerHTML = output;
 	        }
 	      }
 	      //GET JSON
