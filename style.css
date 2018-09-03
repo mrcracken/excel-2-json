@@ -21,12 +21,3 @@ h2{
 	text-align: center;
 	margin-bottom: 5px;
 }
-
-table, th, td {
-    border: 1px solid black;
-    text-align: center;
-}
-
-th{
-	margin: left 5px;
-}
