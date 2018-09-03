@@ -24,39 +24,23 @@
                         <div class="form-group">
                             <h2 for="nameInput">Attach your Excel file here:</h2>
                         </div>
-                        <div class="custom-file" id="customFile">
-                            <input name="myFile" type="file">
+                         <div class="custom-file" id="customFile">
+                            <input type="file" class="custom-file-input" id="my_file_input" aria-describedby="fileHelp">
                             <label class="custom-file-label" for="inputFile">
                                Attach File
                             </label>
-                        </div>
-                         <a onclick="getExcel()" class="btn btn-secondary"><i class="fas fa-eye"></i>  View</a>
+                         <button type="button" class="btn btn-outline-primary" id="viewBtn"><i class="fas fa-eye"></i>  View</button>
                         <button type="button" class="btn btn-outline-success"><i class="fas fa-save"></i>  Save</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="jumbotron">
-            <table>
-                <!-- This is static head of table -->
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Name 1</th>
-                    <th>Name 2</th>
-                    <th>Name 3</th>
-                    <th>Name 4</th>
-                    <th>Name 5</th>
-                    <th>Name 6</th>
-                    <th>Name 7</th>
-                    <th>Name 8</th>
-                </tr>
-                <!-- Other rows generate by JS -->
-                <div id = "excelData"></div>
-            </table>
-        </div>
+        <!-- Here we output Excel table -->
+        <table id='my_file_output'></table>
         <!-- JavaScript Code is here -->
         <script src="main.js"></script>
+        <!-- Source for Excel formating -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.js"></script>
         <!-- End of JavaScript Code is here -->
     </body>
 </html>
