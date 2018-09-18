@@ -1,6 +1,6 @@
-# ey-candidate-test-task
+# excel-2-json
 
-This is a Front End sources for EY Candidate Test Task
+This is a sources for parsing Excel tables to JSON format
 
 ## See the full demo on <br>
 JSFiddel - https://jsfiddle.net/szm3a5fh/1/ <br>
